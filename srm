@@ -1,0 +1,2 @@
+if cd RECYCLE
+else mkdir RECYCLE
