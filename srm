@@ -1,2 +1,11 @@
-if cd RECYCLE
-else mkdir RECYCLE
+
+#!/bin/bash
+if  [ -e $1 ]
+
+then
+
+mkdir ~/RECYCLE/
+gzip $1
+mv $1 ~/RECYCLE/
+find ~/RECYCLE/
+
