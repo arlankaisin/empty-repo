@@ -7,5 +7,12 @@ then
 mkdir ~/RECYCLE/
 gzip $1
 mv $1 ~/RECYCLE/
-find ~/RECYCLE/
+find ~/RECYCLE/ -mtime +7 -delete
+echo "Файл будет автоматический удален через 7 дней"
+
+else
+
+echo "Такого файла не существует"
+
+fi
 
