@@ -5,10 +5,10 @@ if  [ -e $1 ]
 then
 
 mkdir ~/RECYCLE/
-gzip -f -h $1
+gzip $1 
 mv $1 ~/RECYCLE/
 find ~/RECYCLE/$1 -mtime +7 -delete
-echo "Файл будет автоматический удален через 7 дней"
+echo "Файл будет автоматический удален из корзины через 7 дней"
 
 else
 
